@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-08-29 17:45:25
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-06 14:29:41
+* @Last Modified time: 2017-09-12 10:48:28
 */
 .iconfont {
     font-family:"iconfont" !important;
@@ -20,7 +20,12 @@
   url('http://at.alicdn.com/t/font_401139_t38vve67az7low29.ttf') format('truetype'),
   url('http://at.alicdn.com/t/font_401139_t38vve67az7low29.svg#iconfont') format('svg');
 }
-
+input{
+	width: 240px;
+	height: 46px;
+	outline:none;
+	float: left;
+}
 #toubu{
 	width: 100%;
 	height: 40px;
@@ -100,7 +105,10 @@
 	background-color: blue;
 	margin-top: 25px;
 }
-
+.sousuo img{
+	width: 52px;
+	height: 50px;
+}
 
 #danpin{
 	width: 1226px;
@@ -351,6 +359,18 @@
 	padding-top: 34px;
 	float: left;
 	margin-bottom: 14px;
+	position: relative
+}
+.faxing{
+	width: 100%;
+	height: 100%;
+	background-color: orangered;
+	position: absolute;
+	left: 0;
+	bottom: -100px;
+}
+.jiadian-jiaju:hover .faxing{
+	bottom: 0
 }
 .jiaju-img{
 	width: 98px;
