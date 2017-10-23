@@ -11,7 +11,8 @@
 			width: 100%;
 			height: 60px;
 			position: fixed;
-			background: red;
+			background-color: #FF0036;
+    		opacity: .85;
 			left: 0;
 			top: -60px;
 			transition: top .5s;
@@ -23,7 +24,7 @@
 			position: fixed;
 			left: calc(50% - 665px);
 			bottom: 100px;
-			background: yellow;
+			background: white;
 			transition: all .5s;
 			overflow: hidden;
 		}
@@ -55,21 +56,25 @@
 			width: 30px;
 			height: 30px;
 			position: fixed;
-			background: yellow;
+			background: white;
 			right: 0;
 			bottom: 0;
 			opacity: 0;
 			transition: opacity 0.5s;
+			z-index: 9999;
+			font-size: 14px
 		}
 
 		.kuai {
+			color: white;
 			width: 50px;
 			height: 50px;
-			background: green;
+			background: #666;
 			text-align: center;
 			line-height: 25px;
 			font-size: 18px;
-			tletter-spacing: 1px
+			tletter-spacing: 1px;
+			margin-bottom: 2px
 		}
 
 	</style>
@@ -127,9 +132,11 @@
 		</div>
 	</div>
 	<!-- 分类结束 -->
-	<div class="ding">
+	<div class="ding"><div class="dbwz">
+		<a href="#">Tmall 天猫</a></div>
 		<div class="dbhz">
 		<input id="dbss" type="text"></div>
+		<div class="dbss"><a href="">搜 索</a></div>
 	</div>
 	<div class="ce">
 		<div class="kuai">潮流前线</div>
@@ -137,7 +144,10 @@
 		<div class="kuai">猜你喜欢</div>
 		<div class="kuai">更多</div>
 	</div>
-	<div class="totop"></div>
+	<div class="totop">置顶</div>
+	<div class="cxx">
+		<img src="img/微信图片_20171022191414.png" alt="">
+	</div>
 	<!-- banner开始 -->
 	<div id="banner">
 		<ul class="banner-img">
@@ -714,21 +724,21 @@
 </body>
 <script src="animate.js"></script>
 <script>{
-    let nr = document.querySelectorAll(".neirong")
-    let tz = document.querySelectorAll(".kuai")
-    let tt = document.querySelector(".totop")
-    let cc = document.querySelector(".ce")
-    let dd = document.querySelector(".ding")
+    let nr = document.querySelectorAll(".neirong");
+    let tz = document.querySelectorAll(".kuai");
+    let tt = document.querySelector(".totop");
+    let cc = document.querySelector(".ce");
+    let dd = document.querySelector(".ding");
     let ss = document.documentElement.scrollTop === 0 ? document.body : document.documentElement
-    let obj1 = document.scrollTop
+    let obj1 = document.scrollTop;
     window.onscroll = function () {
         if (document.documentElement.scrollTop > 650) {
             dd.style.top = 0;
-            cc.style.cssText = "width:50px;height:200px"
+            cc.style.cssText = "width:50px;height:200px";
             tt.style.cssText = "opacity: 1"
         } else {
-            dd.style.top = "-60px"
-            cc.style.cssText = "width:0px;height:0px"
+            dd.style.top = "-60px";
+            cc.style.cssText = "width:0px;height:0px";
             tt.style.cssText = "opacity: 0"
         }
     }
@@ -745,7 +755,7 @@
     })
 }
 let imgs = document.querySelectorAll(".banner-img li");
-console.log(imgs)
+console.log(imgs);
 let points = document.querySelectorAll(".point");
 points.forEach(function(ele,index){
     ele.onclick=function(){

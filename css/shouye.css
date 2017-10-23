@@ -1,8 +1,8 @@
 /*
 * @Author: Wang Sath
 * @Date:   2017-09-03 17:31:34
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-12 10:52:22
+* @Last Modified by:   Wang Sath
+* @Last Modified time: 2017-10-22 19:18:37
 */
 @font-face {
   font-family: 'iconfont';  /* project id 404072 */
@@ -884,4 +884,43 @@ input{
     margin-top: 9px;
 
 }
-
+.dbhz{
+	width: 648px;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 60px;
+}
+#dbss{
+	width: 648px;
+	height: 30px;
+}
+.dbwz{
+	position: absolute;
+	left:20%;
+	line-height: 60px;
+	font-size: 25px;
+}
+.ding a{
+	color: white
+}
+.dbss{
+	position: absolute;
+	right: 25%;
+	color: white;
+	top: 30%;
+	font-size: 20px
+}
+.cxx{
+	background: black;
+	width: 35px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 999
+}
+.cxx img{
+	height: 369px;
+	position: absolute;
+	top: 35%;
+}
