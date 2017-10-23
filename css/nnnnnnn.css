@@ -1,0 +1,18 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-29 18:01:05
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-09-05 11:58:53
+*/
+*{
+	margin: 0;/* 清除body身上的，8px */
+	text-decoration: none;
+	padding: 0;
+	box-sizing: border-box;
+	box-sizing: content-box
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+
